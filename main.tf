@@ -1,0 +1,6 @@
+data "oci_operator_access_control_operator_control_assignment" "operator_access_control_operator_control_assignment_lookup" {
+  for_each = var.operator_access_control_operator_control_assignment_lookup
+
+  operator_control_assignment_id = each.value.operator_control_assignment_id
+}
+
